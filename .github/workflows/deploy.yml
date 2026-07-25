@@ -30,12 +30,11 @@ jobs:
 
       - name: Build
         run: zola build
-        working-directory: my-website
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: my-website/public
+          path: public
 
   deploy:
     environment:
