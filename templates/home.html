@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+
+{% block main %}
+  {%- if g_profile is defined %}
+    {% include "partials/profile.html" %}
+  {%- endif %}
+  {%- if section.content %}
+  <section>{{ section.content | safe }}</section>
+  {%- endif %}
+{% endblock main %}

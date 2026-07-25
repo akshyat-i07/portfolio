@@ -1,0 +1,11 @@
+[[project]]
+name = "TrueVision"
+desc = "**Tech Stack:** FastAPI, PyTorch, CNN, Grad-CAM<br>TrueVision is a full-stack AI web app for detecting AI-generated images using a ResNet18 CNN fine-tuned with transfer learning on 120,000 labeled CIFAKE images, achieving 98.43% validation accuracy across real and AI-generated classes.<br>It includes a responsive React and Tailwind frontend with drag-and-drop upload, a 10 MB file limit, and support for JPEG, PNG, and WebP images.<br>A FastAPI backend serves real-time PyTorch inference through a REST API and integrates Grad-CAM heatmaps to show the image regions driving each prediction."
+tags = []
+links = []
+
+[[project]]
+name = "ResearchGPT"
+desc = "**Tech Stack:** Python, FastAPI, LangChain, FAISS<br>ResearchGPT is an AI-powered Retrieval-Augmented Generation application that processes and queries information from more than 50 research papers, enabling context-aware question answering with semantic search and Google Gemini.<br>Its FastAPI backend accepts PDF uploads and arXiv URLs, extracts text with PyMuPDF, and indexes over 10,000 text chunks in FAISS for efficient similarity search.<br>A hybrid retrieval pipeline combines semantic search, keyword matching, and document-wide sampling to reduce irrelevant retrieval and improve response quality across more than 100 evaluation queries."
+tags = []
+links = []

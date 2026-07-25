@@ -1,0 +1,86 @@
+# The URL the site will be built for.
+base_url = "https://akshyat-i07.github.io/portfolio/"
+ 
+# The site theme to use.
+theme = "linkita"
+ 
+# The default language.
+default_language = "en"
+ 
+# The default author for pages. See "extra.profiles" below.
+author = "akshyat"
+ 
+# The site title. Will be in all page titles.
+title = "Akshyat"
+ 
+# The site description. Used in feeds by default.
+description = "Portfolio and blog of Akshyat — projects, notes, and writing."
+ 
+# Whether to automatically compile all Sass files in the sass directory.
+compile_sass = true
+ 
+# Automatically generate a feed.
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+ 
+# Build a search index to be used later on by a JavaScript library.
+build_search_index = true
+ 
+[markdown]
+# GitHub-style admonitions/callouts (> [!NOTE] etc.) — Linkita supports these.
+github_alerts = true
+
+# Syntax highlighting left to Zola defaults (theme removed).
+ 
+# Taxonomies Linkita has special support for.
+[[taxonomies]]
+name = "categories"
+feed = true
+paginate_by = 4
+ 
+[[taxonomies]]
+name = "tags"
+feed = true
+paginate_by = 4
+ 
+[extra]
+# Enable/disable features globally
+math = false
+mermaid = false
+comment = false
+ 
+title_separator = " | "
+ 
+# The top menu — see [extra.menus] below.
+header_menu_name = "menu_name"
+ 
+[extra.menus]
+menu_name = [
+  { url = "$BASE_URL/blog/", name = "Blog" },
+  { url = "$BASE_URL/projects/", name = "Projects" },
+  { url = "$BASE_URL/about/", name = "About" },
+]
+ 
+[extra.footer]
+since = 2026
+copyright = "2026 Akshyat"
+ 
+# Replace "akshyat" with whatever username you use in "author" above.
+[extra.profiles.akshyat]
+bio = """
+This is where I keep track of the things I’m learning, building, and breaking.
+
+I’m a computer science student interested in AI, software, and the endless process of turning “this should be easy” into a three-hour debugging session.
+
+This website is a collection of my work, thoughts, experiments, and whatever else survives the journey from idea to implementation.
+
+P.S. If something looks unfinished, it probably is. I call it continuous development.
+"""
+# avatar_url = "profile.png"   # put profile.png in static/ and uncomment
+# avatar_alt = "Photo of Akshyat"
+ 
+social = [
+    { name = "github", url = "https://github.com/akshyat-i07" },
+    { name = "linkedin", url = "https://www.linkedin.com/in/akshyat-bora-6693a0341/" },
+    { name = "email", url = "mailto:akshyat30@gmail.com" },
+]

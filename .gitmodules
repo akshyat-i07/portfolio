@@ -1,0 +1,4 @@
+[submodule "linkita"]
+	path = linkita
+	url = https://codeberg.org/salif/linkita
+	branch = v4
